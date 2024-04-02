@@ -1,0 +1,3 @@
+enum TipoTarjeta{
+	Visa, Mastercard
+}

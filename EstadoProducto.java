@@ -1,0 +1,3 @@
+enum EstadoProducto{
+	DESCONTINUADO, ACTIVO
+}

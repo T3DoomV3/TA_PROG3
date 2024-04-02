@@ -1,0 +1,3 @@
+enum TipoMoneda {
+	SOLES, DOLARES
+}
