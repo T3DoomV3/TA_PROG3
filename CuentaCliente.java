@@ -8,6 +8,44 @@ class CuentaCliente {
 	private String nombreUsuario;
 	private String contraseña;
 	private String contraseñaAnterior;
-	
+
+	public CuentaCliente(EstadoCuenta estadoCuenta,String nombreUsuario, String contraseña){
+		contador++;
+		this.idCuentaCliente = contador;
+		this.estadoCuenta = estadoCuenta;
+		this.fechaCreacion = new Date();
+		this.nombreUsuario = nombreUsuario;
+		this.contraseña = contraseña;
+	}
+	public int getIdCuentaCliente(){
+		return idCuentaCliente;
+	}
+	public Date getFechaCreacion(){
+		return fechaCreacion;
+	}
+	public EstadoCuenta getEstadoCuenta(){
+		return estadoCuenta;
+	}
+	public void setEstadoCuenta(EstadoCuenta estadoCuenta){
+		return estadoCuenta;
+	}
+	public String getNombreUsuario(){
+		return nombreUsuario;
+	}
+	public void setNombreUsuario(String nombreUsuario){
+		this.nombreUsuario = nombreUsuario;
+	}
+	public String getContraseña(){
+		return contraseña;
+	}
+	public void setContraseña(String contraseña){
+		this.contraseña = contraseña;
+	}
+	public String getContraseñaAnterior(){
+		return contraseñaAnterior;
+	}
+	public void setContraseñaAnterior(){
+		this.contraseñaAnterior = contraseñaAnterior;
+	}
 	public void cambiarContraseña(String contraseñaAnterior, String contraseñaNueva);
 }
