@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Date;
-class CuentaCliente {
+class CuentaCliente implements Manage {
 	private static int contador = 0;
 	private int idCuentaCliente;
 	private EstadoCuenta estadoCuenta;
@@ -47,5 +47,5 @@ class CuentaCliente {
 	public void setContraseñaAnterior(){
 		this.contraseñaAnterior = contraseñaAnterior;
 	}
-	public void cambiarContraseña(String contraseñaAnterior, String contraseñaNueva);
+	public void actualizarcontraseña(String contraseñaAnterior, String contraseñaNueva);
 }
