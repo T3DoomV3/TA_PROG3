@@ -8,4 +8,17 @@ class Producto {
 	private double precio;
 	private String descripcion;
 	private EstadoProducto estadoProducto;
+
+	public String GetNombre(){
+		return nombre;
+	}
+
+	public EstadoProducto(){
+		return estadoProdcuto;
+	}
+
+	public double GetPrecio(){
+		return precio;
+	}
+	
 }
